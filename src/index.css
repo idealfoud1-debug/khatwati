@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-ui: 'Cairo', 'Tajawal', system-ui, -apple-system, sans-serif;
+    --font-quran: 'Amiri', 'Traditional Arabic', serif;
+    --color-bg-base: #FAF8F5;
+    --color-surface-card: #FFFFFF;
+    --color-emerald-primary: #064E3B;
+    --color-emerald-accent: #047857;
+    --color-gold-accent: #D4AF37;
+  }
+
+  body {
+    font-family: var(--font-ui);
+    background-color: var(--color-bg-base);
+    color: #1E293B;
+    direction: rtl;
+    text-align: right;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid #059669;
+    outline-offset: 2px;
+  }
+}
+
+/* Quranic Arabic Typography */
+.font-quran {
+  font-family: var(--font-quran);
+  line-height: 2.2;
+}
+
+.font-ui {
+  font-family: var(--font-ui);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1EFEA;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+  </defs>
+  <!-- Background rounded squircle with safe zone -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  
+  <!-- Subtle decorative Islamic star rosette watermark in background -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="2" fill="none">
+    <circle cx="256" cy="256" r="180" />
+    <polygon points="256,76 383,129 436,256 383,383 256,436 129,383 76,256 129,129" />
+    <polygon points="256,86 376,136 426,256 376,376 256,426 136,376 86,256 136,136" transform="rotate(22.5 256 256)" />
+  </g>
+
+  <!-- Open Quran / Mihrab Arch Stylized Icon -->
+  <g transform="translate(256, 260)">
+    <!-- Base open book pages -->
+    <path d="M -130,40 C -80,10 -20,20 0,55 C 20,20 80,10 130,40 C 130,120 70,140 0,160 C -70,140 -130,120 -130,40 Z" fill="#FAF8F5" opacity="0.95" />
+    
+    <!-- Quran book spine & gilded pages accent -->
+    <path d="M 0,55 L 0,160" stroke="#ca8a04" stroke-width="4" stroke-linecap="round" />
+    <path d="M -115,50 C -75,25 -20,32 0,65 C 20,32 75,25 115,50" stroke="#e2e8f0" stroke-width="2" fill="none" />
+    
+    <!-- Golden Crescent Moon rising above Quran -->
+    <path d="M 45,-120 C -25,-120 -80,-65 -80,5 C -80,35 -68,62 -50,82 C -55,70 -58,55 -58,40 C -58,-30 -8,-85 55,-90 C 52,-100 50,-110 45,-120 Z" fill="url(#goldGrad)" />
+    
+    <!-- Eight-pointed Star (Rub El Hizb) -->
+    <g transform="translate(42, -50) scale(0.65)">
+      <rect x="-24" y="-24" width="48" height="48" rx="4" fill="url(#goldGrad)" />
+      <rect x="-24" y="-24" width="48" height="48" rx="4" fill="url(#goldGrad)" transform="rotate(45)" />
+      <circle cx="0" cy="0" r="10" fill="#064e3b" />
+    </g>
+  </g>
+</svg>

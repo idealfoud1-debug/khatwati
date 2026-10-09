@@ -1,0 +1,29 @@
+{
+  "id": "/",
+  "name": "Khatwati — خطوتي نحو الصلاة والقرآن",
+  "short_name": "خطوتي",
+  "description": "منصة تعليمية إسلامية تفاعلية لتعلم الصلاة والوضوء والقرآن الكريم والأذكار مع أوقات الصلاة والقبلة",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FAF8F5",
+  "theme_color": "#064e3b",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["education", "lifestyle", "books"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

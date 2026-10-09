@@ -1,0 +1,10 @@
+{
+  "name": "Khatwati — خطوتي نحو الصلاة والقرآن",
+  "description": "منصة تعليمية إسلامية تفاعلية لتعلم الصلاة والوضوء والقرآن الكريم والأذكار مع أوقات الصلاة والقبلة والمساعد التعليمي الذكي",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
